@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>webpage</title>
+    </head>
+
+    <body style="background-color: #073B3A;">
+
+        <h1 align="center" style="color: lime">
+            CHURN RATE CALCULATOR
+        </h1>
+
+        <h2 align="center" style="color: lime">
+            SARAVANAKUMAR-(26011394)
+        </h2>
+
+        <form method="POST">
+
+            {% csrf_token %}
+            <br>
+
+            <label style="color: lime">INITCUST</label>
+            <input type="text" name="inital" value="{{h}}" style="color:limegreen">
+            <br><br>
+
+            <label style="color: lime">CUSTLOST</label>
+            <input type="text" name="lost" value="{{a}}" style="color:limegreen">
+            <br><br>
+
+            <input type="submit" value="CALCULATE">
+            <br><br>
+
+            <label style="color: lime">CUSTRATE</label>
+            <input type="text" value="{{ChurnRate}}" style="color:limegreen">
+            <br>
+
+        </form>
+
+    </body>
+</html>
